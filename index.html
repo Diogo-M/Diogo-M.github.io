@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Diogo Magalhães · Software Developer</title>
-  <meta name="description" content="Diogo Magalhães, software developer in Portugal working across web, mobile and backend.">
-  <meta property="og:title" content="Diogo Magalhães · Software Developer">
-  <meta property="og:description" content="Software developer in Portugal working across web, mobile and backend.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Diogo Magalhães · Full Stack Developer</title>
+  <meta name="description" content="Diogo Magalhães, full stack developer in Portugal building web, mobile and cloud software.">
+  <meta property="og:title" content="Diogo Magalhães · Full Stack Developer">
+  <meta property="og:description" content="Full stack developer in Portugal building web, mobile and cloud software.">
   <meta property="og:image" content="https://avatars.githubusercontent.com/u/80853128?v=4">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,146 +21,97 @@
     <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
     <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
     <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M19 10v1a7 7 0 0 1-14 0v-1"/><path d="M12 18v4"/></symbol>
   </svg>
 
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="./">diogo<span>.</span>m</a>
+      <a class="brand" href="#top">diogo<span>.</span>m</a>
       <nav class="nav" aria-label="Sections">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
+        <a class="nav-gh" href="https://github.com/Diogo-M" aria-label="GitHub"><svg class="icon"><use href="#i-github"/></svg></a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="top">
     <div class="hero">
       <div class="wrap">
-        <img class="avatar" src="https://avatars.githubusercontent.com/u/80853128?v=4" alt="Diogo Magalhães">
-        <div>
-          <p class="eyebrow">Hi, I'm</p>
-          <h1>Diogo Magalhães</h1>
-          <p class="lead">
-            Software developer building functional, reliable and scalable applications
-            across web, mobile and backend.
-          </p>
+        <div class="hero-id">
+          <img class="avatar" src="https://avatars.githubusercontent.com/u/80853128?v=4&s=112" alt="Diogo Magalhães" width="168" height="168">
           <div class="meta">
-            <span><svg class="icon"><use href="#i-briefcase"/></svg>Software Developer at <a href="https://dingoo.pt/">Dingoo</a></span>
-            <span><svg class="icon"><use href="#i-pin"/></svg>Portugal</span>
+            <span><svg class="icon"><use href="#i-briefcase"/></svg>Senior full stack developer at <a href="https://dingoo.pt/">Dingoo</a></span>
+            <span><svg class="icon"><use href="#i-pin"/></svg>Seixal, Portugal</span>
           </div>
-          <div class="actions">
-            <a class="btn primary" href="https://www.linkedin.com/in/diogomagalhaes13/"><svg class="icon"><use href="#i-linkedin"/></svg>LinkedIn</a>
-            <a class="btn" href="https://github.com/Diogo-M"><svg class="icon"><use href="#i-github"/></svg>GitHub</a>
-            <a class="btn" href="mailto:diogofmagalhaes13@gmail.com"><svg class="icon"><use href="#i-mail"/></svg>Email</a>
+        </div>
+        <h1>Diogo Magalhães</h1>
+        <p class="lead">
+          Full stack developer who learns by building. I've shipped web, mobile and cloud
+          software since 2018, and outside work I make an offline-first vehicle log, run a
+          home server that rebuilds itself from Git, and 3D print.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="https://www.linkedin.com/in/diogomagalhaes13/"><svg class="icon"><use href="#i-linkedin"/></svg>LinkedIn</a>
+          <div class="email">
+            <svg class="icon"><use href="#i-mail"/></svg>
+            <span class="email-text" id="email-hero">diogofmagalhaes13@gmail.com</span>
+            <button class="copy" type="button" id="copy-hero" data-target="email-hero"><svg class="icon"><use href="#i-copy"/></svg><span>Copy</span></button>
           </div>
         </div>
       </div>
     </div>
 
-    <section id="about">
-      <div class="wrap">
-        <p class="section-label">About</p>
-        <h2>Learning by doing</h2>
-        <div class="about">
-          <div>
-            <p>
-              I'm a software developer at <a href="https://dingoo.pt/">Dingoo</a>, where I work
-              across the whole product: frontend, backend and mobile.
-            </p>
-            <p>
-              I like to understand how things work, in code and in real life. If it has an
-              engine, a circuit board or a compiler, I want to take it apart and play with it.
-              I think the best tutorial is building the thing yourself.
-            </p>
-            <p>
-              Outside work that means web and game development, 3D modelling and printing,
-              and running my own home server.
-            </p>
-          </div>
-          <ul class="facts">
-            <li><strong>Role</strong>Software Developer, Dingoo</li>
-            <li><strong>Focus</strong>Web, mobile and backend</li>
-            <li><strong>Interests</strong>Game dev, 3D modelling &amp; printing, self-hosting</li>
-            <li><strong>Based in</strong>Portugal</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills">
-      <div class="wrap">
-        <p class="section-label">Skills</p>
-        <h2>What I work with</h2>
-        <div class="skills">
-          <div class="skill-group">
-            <h3>Frontend &amp; mobile</h3>
-            <ul class="chips">
-              <li>React</li>
-              <li>Flutter</li>
-              <li>Dart</li>
-              <li>Kotlin</li>
-              <li>JavaScript</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h3>Backend</h3>
-            <ul class="chips">
-              <li>Node.js</li>
-              <li>Python</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h3>Cloud &amp; infrastructure</h3>
-            <ul class="chips">
-              <li>Google Cloud</li>
-              <li>Docker</li>
-              <li>Ansible</li>
-              <li>Linux</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section id="projects">
       <div class="wrap">
-        <p class="section-label">Projects</p>
-        <h2>Things I've built</h2>
+        <h2>Projects</h2>
         <div class="projects">
-          <article class="card featured">
-            <div class="card-head">
-              <img src="assets/duck-garage.png" alt="">
-              <div>
-                <h3>Duck Garage <span class="badge">In progress</span></h3>
-                <div class="kind">Android app · Flutter</div>
+          <article class="project featured">
+            <div class="project-text">
+              <div class="card-head">
+                <img src="assets/duck-garage.png" alt="" width="64" height="64">
+                <div>
+                  <h3>Duck Garage</h3>
+                  <div class="kind">Android app · Flutter · <span class="status"><span class="dot"></span>In progress</span></div>
+                </div>
               </div>
+              <p>
+                An offline-first maintenance log for your vehicles: every service, part and
+                fill-up, with photos and receipts. No account and no server: everything stays
+                on the phone and works without signal.
+              </p>
+              <ul class="points">
+                <li>Say or type a fill-up and the right form opens already filled in, read on the phone by Gemini Nano, with a rule-based parser as a fallback</li>
+                <li>Fuel consumption measured only between full tanks, so the figures are honest</li>
+                <li>Reminders, home-screen widgets, and English and Portuguese</li>
+                <li>Its own design system, with unit, widget, golden and on-device tests</li>
+              </ul>
+              <p class="stack">Flutter · Dart · Riverpod · Drift (SQLite) · Gemini Nano · Kotlin</p>
             </div>
-            <p>
-              An offline-first maintenance log for your vehicles: every service, part and
-              fill-up, with photos and receipts. No account and no server: everything stays
-              on the phone and works without signal.
-            </p>
-            <ul class="points">
-              <li>"Tell Duck Garage": say or type <em>"filled the Monster, 12 L, 21.30 at Galp"</em> and the right form opens already filled in, read on the phone by Gemini Nano, with a rule-based parser as a fallback</li>
-              <li>Fuel consumption measured only between full tanks, so the figures are honest</li>
-              <li>Reminders, home-screen widgets, and English and Portuguese</li>
-              <li>Its own design system, with unit, widget, golden and on-device tests</li>
-            </ul>
-            <ul class="chips">
-              <li>Flutter</li>
-              <li>Dart</li>
-              <li>Riverpod</li>
-              <li>Drift (SQLite)</li>
-              <li>Gemini Nano</li>
-              <li>Kotlin</li>
-            </ul>
+            <figure class="phone" aria-label="Duck Garage turning a spoken fill-up into a filled form">
+              <div class="phone-screen">
+                <div class="say"><svg class="icon"><use href="#i-mic"/></svg>filled the Monster, 12 L, 21.30 at Galp</div>
+                <div class="form-title">New fill-up</div>
+                <dl class="form">
+                  <div><dt>Vehicle</dt><dd>Monster</dd></div>
+                  <div><dt>Fuel</dt><dd>12.00 L</dd></div>
+                  <div><dt>Total</dt><dd>€21.30</dd></div>
+                  <div><dt>Price</dt><dd>€1.775 / L</dd></div>
+                  <div><dt>Station</dt><dd>Galp</dd></div>
+                </dl>
+                <div class="save">Save fill-up</div>
+              </div>
+              <figcaption>The example from the app, filled in on the phone</figcaption>
+            </figure>
           </article>
 
-          <article class="card">
+          <article class="project">
             <div class="card-head">
-              <img src="assets/homeserver.png" alt="">
+              <img src="assets/homeserver.png" alt="" width="44" height="44">
               <div>
                 <h3>Home server</h3>
                 <div class="kind">Infrastructure as code · private repo</div>
@@ -171,24 +122,19 @@
               Every night it pulls the repo and applies it, so the whole machine can be
               reinstalled from scratch.
             </p>
-            <ul class="points">
-              <li>Ansible and Docker Compose, with pinned images and a dry-run mode</li>
-              <li>Secrets encrypted in Git with SOPS and age</li>
-              <li>Encrypted restic backups kept in three places, one off-site</li>
-              <li>Discord alerts, hardware watchdog and GPU video transcoding</li>
-            </ul>
-            <ul class="chips">
-              <li>Ansible</li>
-              <li>Docker</li>
-              <li>Linux</li>
-              <li>Bash</li>
-              <li>restic</li>
-            </ul>
+            <ol class="run" aria-label="What the nightly run does">
+              <li><span>pull</span>the repository</li>
+              <li><span>decrypt</span>secrets kept in Git with SOPS and age</li>
+              <li><span>apply</span>Ansible and Docker Compose, pinned images</li>
+              <li><span>back up</span>restic, three copies, one off-site</li>
+            </ol>
+            <p class="small">Also: Discord alerts, a hardware watchdog and GPU video transcoding.</p>
+            <p class="stack">Ansible · Docker · Linux · Bash · restic</p>
           </article>
 
-          <article class="card" id="home-server-backup">
+          <article class="project" id="home-server-backup">
             <div class="card-head">
-              <img src="assets/homeserver.png" alt="">
+              <img src="assets/homeserver.png" alt="" width="44" height="44">
               <div>
                 <h3>Home Server Backup</h3>
                 <div class="kind">Google Drive client · personal use</div>
@@ -200,27 +146,109 @@
               Google Drive. It can only see the files it created itself, and it isn't a public
               service.
             </p>
-            <ul class="chips">
-              <li>Google Drive API</li>
-              <li>OAuth 2.0</li>
-              <li>rclone</li>
-            </ul>
-            <div class="links">
-              <a href="privacy.html">Privacy policy</a>
-            </div>
+            <p class="stack">Google Drive API · OAuth 2.0 · rclone</p>
+            <a class="more" href="privacy.html">Privacy policy</a>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="wrap">
+        <h2>Experience</h2>
+        <ol class="jobs">
+          <li class="job">
+            <div class="when">Sep 2024 – now</div>
+            <div class="job-body">
+              <h3>Senior Full Stack Developer <span class="org">Dingoo, Lisbon</span></h3>
+              <ul class="points">
+                <li>Helped move the delivery platform to a multi-tenant SaaS on Google Cloud, with Firebase auth and a MongoDB database per tenant</li>
+                <li>Built carrier and partner integrations for CTT, DPD, GLS, Uber and Route4Me, over REST APIs and SFTP</li>
+                <li>Developed the backoffice and dashboards, and worked on the React Native and Flutter driver apps</li>
+                <li>Designed the MongoDB schemas and pipelines, synced data to BigQuery, and kept CI/CD running on Cloud Build and Cloud Run</li>
+              </ul>
+              <p class="stack">React · TypeScript · Python · FastAPI · MongoDB · BigQuery · Google Cloud</p>
+            </div>
+          </li>
+          <li class="job">
+            <div class="when">Mar 2023 – May 2024</div>
+            <div class="job-body">
+              <h3>Full Stack Developer <span class="org">Crowdkeep Portugal, Lisbon</span></h3>
+              <p>Kept developing u-find.me after Crowdkeep acquired it: reworked the app to match Crowdkeep's design, adapted its backend services to Crowdkeep's needs, and built what clients asked for.</p>
+            </div>
+          </li>
+          <li class="job">
+            <div class="when">Jul 2021 – Feb 2023</div>
+            <div class="job-body">
+              <h3>Full Stack and Mobile Developer <span class="org">u-find.me, Lisbon</span></h3>
+              <ul class="points">
+                <li>Built a map on top of Mapbox for indoor location and resource booking, after testing Mapbox against Google Maps</li>
+                <li>Wrote Python functions that query BigQuery for the reporting charts</li>
+              </ul>
+              <p class="stack">React · Google Cloud · Firebase · Mapbox · BigQuery</p>
+            </div>
+          </li>
+        </ol>
+        <h3 class="sub">Internships</h3>
+        <ol class="jobs compact">
+          <li class="job">
+            <div class="when">Sep 2020 – Jun 2021</div>
+            <div class="job-body"><p><span class="role">u-factor.io</span>React web apps with Firebase auth, secure backend functions and Firestore, and work on the u-ride.me platform</p></div>
+          </li>
+          <li class="job">
+            <div class="when">Apr – Aug 2020</div>
+            <div class="job-body"><p><span class="role">u-factor.io</span>Flutter apps using the Google Maps API and NFC tags, and React websites</p></div>
+          </li>
+          <li class="job">
+            <div class="when">Apr – Aug 2018</div>
+            <div class="job-body"><p><span class="role">Accenture</span>Web development internship from the professional course</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <h2>About</h2>
+        <div class="about">
+          <div class="about-text">
+            <p>
+              I've been building web, mobile and cloud software since 2018, from Flutter apps
+              that read NFC tags to indoor maps at u-find.me and the delivery platform at
+              <a href="https://dingoo.pt/">Dingoo</a>.
+            </p>
+            <p>
+              I like to understand how things work, in code and in real life. If it has an
+              engine, a circuit board or a compiler, I want to take it apart and play with it.
+              I think the best tutorial is building the thing yourself.
+            </p>
+            <p>
+              Outside work that means web and game development, 3D modelling and printing,
+              and running my own home server.
+            </p>
+          </div>
+          <dl class="tools">
+            <div><dt>Frontend and mobile</dt><dd>React, TypeScript, React Native, Flutter, Dart, Kotlin</dd></div>
+            <div><dt>Backend and data</dt><dd>Node.js, Python, FastAPI, MongoDB, BigQuery, Firebase</dd></div>
+            <div><dt>Cloud and infrastructure</dt><dd>Google Cloud, Cloud Run, Docker, Ansible, Linux</dd></div>
+            <div><dt>Languages</dt><dd>Portuguese (native), English (C1)</dd></div>
+            <div><dt>Education</dt><dd>CTeSP in Web Programming, Mobile Devices and Applications, IPS Setúbal, 2018–2020</dd></div>
+          </dl>
         </div>
       </div>
     </section>
 
     <section id="contact" class="contact">
       <div class="wrap">
-        <p class="section-label">Contact</p>
-        <h2>Let's talk</h2>
-        <p>Open to a chat about software, a project or an opportunity. LinkedIn or email are the best ways to reach me.</p>
+        <h2>Get in touch</h2>
+        <p>Happy to talk about software, a project or an opportunity. LinkedIn or email reach me fastest.</p>
         <div class="actions">
           <a class="btn primary" href="https://www.linkedin.com/in/diogomagalhaes13/"><svg class="icon"><use href="#i-linkedin"/></svg>LinkedIn</a>
-          <a class="btn" href="mailto:diogofmagalhaes13@gmail.com"><svg class="icon"><use href="#i-mail"/></svg>diogofmagalhaes13@gmail.com</a>
+          <div class="email">
+            <svg class="icon"><use href="#i-mail"/></svg>
+            <span class="email-text" id="email-contact">diogofmagalhaes13@gmail.com</span>
+            <button class="copy" type="button" id="copy-contact" data-target="email-contact"><svg class="icon"><use href="#i-copy"/></svg><span>Copy</span></button>
+          </div>
         </div>
       </div>
     </section>
@@ -229,8 +257,41 @@
   <footer class="site-footer">
     <div class="wrap">
       <span>© 2026 Diogo Magalhães</span>
-      <a href="privacy.html">Privacy policy</a>
+      <span class="footer-links">
+        <a href="privacy.html">Privacy policy</a>
+        <a href="https://github.com/Diogo-M/Diogo-M.github.io">Source</a>
+      </span>
     </div>
   </footer>
+
+  <script>
+    document.querySelectorAll(".copy").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var text = document.getElementById(btn.dataset.target);
+        var label = btn.querySelector("span");
+        function done() {
+          label.textContent = "Copied";
+          btn.querySelector("use").setAttribute("href", "#i-check");
+          setTimeout(function () {
+            label.textContent = "Copy";
+            btn.querySelector("use").setAttribute("href", "#i-copy");
+          }, 1600);
+        }
+        function select() {
+          var r = document.createRange();
+          r.selectNodeContents(text);
+          var s = window.getSelection();
+          s.removeAllRanges();
+          s.addRange(r);
+          label.textContent = "Press Ctrl+C";
+        }
+        try {
+          navigator.clipboard.writeText(text.textContent.trim()).then(done, select);
+        } catch (e) {
+          select();
+        }
+      });
+    });
+  </script>
 </body>
 </html>
